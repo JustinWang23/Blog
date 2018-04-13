@@ -13,9 +13,9 @@
 * 在属性前后加上注释
 
 ```CSS
- /* autoprefixer: off */
-  -webkit-box-orient: vertical; // 参考 https://github.com/postcss/autoprefixer/issues/776
-  /* autoprefixer: on */
+/*! autoprefixer: off */
+-webkit-box-orient: vertical;
+/* autoprefixer: on */
 ```
 
 * 修改webpack的配置
