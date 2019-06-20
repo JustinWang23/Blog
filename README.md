@@ -21,3 +21,14 @@
 * 修改webpack的配置
 
 在webpack.config.js文件中，找到 new webpack.optimize.UglifyJsPlugin，在里面添加一条 mangle:false，这个的意思是删除注释。这样打包时就注释和这行代码就不会连在一起了。
+
+
+---
+
+### web端hover事件在mobile端的处理
+
+*其实mobile端的touch事件可以触发web的hover效果，我们需要做的其实就是给元素加上一个touch事件就可以了，但是在Safari上，可能有时候会出现点击其他区域，无法消除hover效果的情况出现。*
+
+```
+document.body.addEventListener('touchstart', () => {});
+```
