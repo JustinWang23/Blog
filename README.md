@@ -83,3 +83,9 @@ export default () => {
       // handle with error
     })
 ```
+
+---
+
+### mpvue页面会有缓存
+
+mpvue在页面回退的时候，会cache页面的data数据，下次进入时，直接读取的cache，需要在页面onUnload的时候，去清除或者重置一下数据
